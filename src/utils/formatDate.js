@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default (date) => {
   const d = new Date(date);
   let month = `${d.getMonth() + 1}`;
