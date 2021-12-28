@@ -1,0 +1,76 @@
+import React, { useState, useContext, useEffect } from 'react';
+import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
+import { v4 as uuidv4 } from 'uuid';
+// import CurrencyTextField from '@unicef/material-ui-currency-textfield'
+
+// import { useSpeechContext } from '@speechly/react-client';
+import Snackbar from '../../Snackbar/Snackbar';
+import formatDate from '../../../utils/formatDate';
+import { ExpenseTrackerContext } from '../../../context/context';
+import { incomeCategories, expenseCategories } from '../../../constants/categories';
+import useStyles from './styles';
+
+const initialState = {
+  amount: '',
+  category: '',
+  type: 'Expense',
+  date: formatDate(new Date()),
+};
+
+const NewTransactionForm = () => {
+  const classes = useStyles();
+  const { addTransaction } = useContext(ExpenseTrackerContext);
+  const [formData, setFormData] = useState(initialState);
+  // const { segment } = useSpeechContext();
+  const [open, setOpen] = React.useState(false);
+
+  const createTransaction = () => {
+    if (Number.isNaN(Number(formData.amount)) || !formData.date.includes('-')) return;
+
+    // if (incomeCategories.map((iC) => iC.type).includes(formData.category)) {
+    //   setFormData({ ...formData, type: 'Income' });
+    // } else if (expenseCategories.map((iC) => iC.type).includes(formData.category)) {
+    //   setFormData({ ...formData, type: 'Expense' });
+    // }
+    setFormData({ ...formData, type: 'Expense' });
+    setOpen(true);
+    addTransaction({ ...formData, amount: Number(formData.amount), id: uuidv4() });
+    setFormData(initialState);
+  };
+  const selectedCategories = expenseCategories;
+
+  return (
+    <Grid container spacing={2}>
+      <Snackbar open={open} setOpen={setOpen} />
+      <Grid item xs={12}>
+      </Grid>
+      <Grid item xs={12}>
+        <FormControl fullWidth>
+          <InputLabel>Type</InputLabel>
+          <Select value={"Expense"} onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
+            {/* <MenuItem value="Income">Income</MenuItem> */}
+            <MenuItem autoFocus={true} value="Expense">Expense</MenuItem>
+          </Select>
+        </FormControl>
+      </Grid>
+      <Grid item xs={12}>
+        <FormControl fullWidth>
+          <InputLabel>Category</InputLabel>
+          <Select value={formData.category} onChange={(e) => setFormData({ ...formData, category: e.target.value })}>
+            {selectedCategories.map((c) => <MenuItem key={c.type} value={c.type}>{c.type}</MenuItem>)}
+          </Select>
+        </FormControl>
+      </Grid>
+
+      <Grid item xs={12}>
+        <TextField type="number" label="Amount" value={formData.amount} onChange={(e) => setFormData({ ...formData, amount: e.target.value })} fullWidth />
+      </Grid>
+      <Grid item xs={12}>
+        <TextField fullWidth label="Date" type="date" value={formData.date} onChange={(e) => setFormData({ ...formData, date: formatDate(e.target.value) })} />
+      </Grid>
+      <Button className={classes.button} variant="contained" color="primary" fullWidth onClick={createTransaction}>Add Expenses</Button>
+    </Grid>
+  );
+};
+
+export default NewTransactionForm;
