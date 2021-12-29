@@ -11,9 +11,9 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DetailsCard = ({ title, subheader }) => {
   const { total, chartData } = useTransactions(title);
   const classes = useStyles();
-  return total !== 0 && (
+  return (
     <Card className={title === 'Income' ? classes.income : classes.expense}>
-      <CardHeader title={title} subheader={subheader} />
+      <CardHeader title={'Expenses chart'} subheader={subheader} />
       <CardContent>
         <Typography variant="h5">£{total.toFixed(2)}</Typography>
         <Doughnut data={chartData} />
