@@ -43,7 +43,7 @@
   font-family: "Darwin-Light" !important; 
 }
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/money.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
     background-size: cover;
 }
 .MuiImageListItemBar-root {
