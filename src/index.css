@@ -1,17 +1,64 @@
 #root, body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Darwin-Light !important'; 
 }
 
+@font-face {font-family: "Darwin-Bold";
+  src: url("../src/assets/fonts/eot/Darwin-Bold.eot"); /* IE9*/
+  src: url("../src/assets/fonts/eot/Darwin-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../src/assets/fonts/woff2/Darwin-Bold.woff2") format("woff2"), /* chrome firefox */
+  url("../src/assets/fonts/woff/Darwin-Bold.woff") format("woff"), /* chrome firefox */
+  url("../src/assets/fonts/ttf/Darwin-Bold.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("../src/assets/fonts/svg/Darwin-Bold.svg#Darwin-Bold") format("svg"); /* iOS 4.1- */
+}  
+@font-face {font-family: "Darwin-Light";
+  src: url("../src/assets/fonts/eot/Darwin-Light.eot"); /* IE9*/
+  src: url("../src/assets/fonts/eot/Darwin-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../src/assets/fonts/woff2/Darwin-Light.woff2") format("woff2"), /* chrome firefox */
+  url("../src/assets/fonts/woff/Darwin-Light.woff") format("woff"), /* chrome firefox */
+  url("../src/assets/fonts/ttf/Darwin-Light.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("../src/assets/fonts/svg/Darwin-Light.svg#Darwin-Light") format("svg"); /* iOS 4.1- */
+}  
+@font-face {font-family: "Fira-Sans-ExtraLight";
+  src: url("../src/assets/fonts/ttf/fira-sans.extralight.ttf"); 
+}  
+
+.MuiImageList-root {
+  background-image: url("../src/assets/income-and-expenses-illustration.jpeg");
+  background-size: cover;
+} 
+.MuiImageListItemBar-rootSubtitle {
+  height: 100% !important;
+}
+.MuiImageListItemBar-title {
+  font-size: 2.4em !important;
+  line-height: 2 !important;
+  font-family: 'Fira-Sans-ExtraLight'; 
+}
+.MuiImageListItemBar-subtitle { 
+  font-size: 1rem !important;
+}
+.MuiImageListItemBar-titleWrap {
+  font-family: "Darwin-Light" !important; 
+}
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/money.png);
     background-size: cover;
 }
-
+.MuiImageListItemBar-root {
+    background: rgb(0 0 0 / 52%) !important;
+}
+.MuiGrid-align-items-xs-center {
+    align-items: flex-start !important;
+}
 ul {
     max-height: 365px !important;
 }
 
 .makeStyles-last-4 {
-    padding-bottom: 50px !important;
+    /* padding-bottom: 50px !important; */
+}
+.MuiImageListItem-root {
+    padding: 0px !important;
 }
