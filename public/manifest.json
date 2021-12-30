@@ -6,13 +6,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/index.html",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "com.google.samples.apps.iosched"
-    }
-  ],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icon-72x72.png",
