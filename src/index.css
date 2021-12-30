@@ -28,7 +28,7 @@
 }  
 
 .MuiImageList-root {
-  background-image: url("../src/assets/income-and-expenses-illustration.jpeg");
+  background-image: url("../src/assets/income-and-expenses-illustration.webp");
   background-size: cover;
 } 
 .MuiImageListItemBar-rootSubtitle {
