@@ -9,7 +9,7 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 const App = () => {
   const classes = useStyles();
   const main = useRef(null)
-  const Details = React.lazy(() => import('./components/Details/Details'));
+  // const Details = React.lazy(() => import('./components/Details/Details'));
 
   return (
     <div>
