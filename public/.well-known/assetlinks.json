@@ -2,6 +2,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
         "namespace": "web",
-        "site": "https://home-monthly-expense.netlify.app"
+        "site": "https://home-monthly-expense.netlify.app",
+        "sha256_cert_fingerprints": [
+            "76:D3:9C:F9:F8:52:C8:F6:A4:BB:2E:C4:7E:95:D5:DD:C1:F9:F3:00"
+        ]
     }
 }]
