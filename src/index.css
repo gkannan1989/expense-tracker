@@ -5,6 +5,7 @@
 }
 
 @font-face {font-family: "Darwin-Bold";
+  font-display: swap;
   src: url("../src/assets/fonts/eot/Darwin-Bold.eot"); /* IE9*/
   src: url("../src/assets/fonts/eot/Darwin-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("../src/assets/fonts/woff2/Darwin-Bold.woff2") format("woff2"), /* chrome firefox */
@@ -13,6 +14,7 @@
   url("../src/assets/fonts/svg/Darwin-Bold.svg#Darwin-Bold") format("svg"); /* iOS 4.1- */
 }  
 @font-face {font-family: "Darwin-Light";
+  font-display: swap;
   src: url("../src/assets/fonts/eot/Darwin-Light.eot"); /* IE9*/
   src: url("../src/assets/fonts/eot/Darwin-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("../src/assets/fonts/woff2/Darwin-Light.woff2") format("woff2"), /* chrome firefox */
@@ -21,6 +23,7 @@
   url("../src/assets/fonts/svg/Darwin-Light.svg#Darwin-Light") format("svg"); /* iOS 4.1- */
 }  
 @font-face {font-family: "Fira-Sans-ExtraLight";
+  font-display: swap;
   src: url("../src/assets/fonts/ttf/fira-sans.extralight.ttf"); 
 }  
 
