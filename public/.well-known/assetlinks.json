@@ -2,6 +2,6 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
         "namespace": "web",
-        "site": "https://home-expense-tracker.netlify.app"
+        "site": "https://home-monthly-expense.netlify.app"
     }
 }]
