@@ -29,7 +29,7 @@ const App = () => {
         </Grid>
         <Grid item xs={12} sm={4} className={classes.last}>
           <Suspense fallback={<>Loading</>}>
-            {<Details title="Expense" />}
+            {/* {<Details title="Expense" />} */}
           </Suspense>
         </Grid>
       </Grid>
