@@ -9,7 +9,7 @@ import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 const App = () => {
   const classes = useStyles();
   const main = useRef(null)
-  // const Details = React.lazy(() => import('./components/Details/Details'));
+  const Details = React.lazy(() => import('./components/Details/Details'));
 
   return (
     <div>
@@ -29,7 +29,7 @@ const App = () => {
         </Grid>
         <Grid item xs={12} sm={4} className={classes.last}>
           <Suspense fallback={<>Loading</>}>
-            {/* {<Details title="Expense" />} */}
+            {<Details title="Expense" />}
           </Suspense>
         </Grid>
       </Grid>
