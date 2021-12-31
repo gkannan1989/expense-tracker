@@ -1,7 +1,8 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-        "namespace": "web",
+        "namespace": "android_app",
+        "package_name": "app.netlify.home_monthly_expense.twa",
         "site": "https://home-monthly-expense.netlify.app",
         "sha256_cert_fingerprints": [
             "B6:68:C7:46:F0:CE:A9:93:51:E8:75:04:FE:22:99:2D:0E:AE:EC:29:7A:31:F0:16:BB:D4:C1:A4:42:FB:D2:F4"
