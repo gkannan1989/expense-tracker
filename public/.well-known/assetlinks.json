@@ -1,10 +1,9 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-        "namespace": "android_app",
-        "package_name": "app.netlify.home_monthly_expense.twa",
-        "sha256_cert_fingerprints": [
-            "B6:68:C7:46:F0:CE:A9:93:51:E8:75:04:FE:22:99:2D:0E:AE:EC:29:7A:31:F0:16:BB:D4:C1:A4:42:FB:D2:F4"
-        ]
-    }
+      "namespace": "android_app",
+      "package_name": "app.netlify.home_monthly_expense.twa",
+      "sha256_cert_fingerprints":
+        ["1F:EC:F5:6E:4D:A6:E0:2F:74:F5:38:DA:D7:DF:01:A9:F1:0B:BC:C4:53:DC:51:D0:FC:4A:9C:64:C0:E6:8F:BD"]
+     }
 }]
