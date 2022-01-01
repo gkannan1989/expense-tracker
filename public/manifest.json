@@ -3,7 +3,7 @@
   "short_name": "Tracker",
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
   "prefer_related_applications": false,
